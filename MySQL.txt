@@ -1,0 +1,1474 @@
+-: 27-04-2026
+
+-: Google Drive Link 
+https://drive.google.com/drive/folders/14QymL0n21ulnZkiwfMkqWglOI2uhe58Z?usp=drive_link
+
+-: GitHub Link  
+https://github.com/jbkmayur2022-dev/MySQL-Files.git
+
+
+- Is MySQL Installed? 
+
+-: create table table_name(column_name data_type,.....);
+e.g.
+create table student(id int,name text,age int);
+
+-: insert into table_name (column_name,....) values(value1,....);
+insert into student(id,name,age) values(1,"Radha",23);
+
+insert into table_name values(value1,.....);
+e.g.
+insert into student values(2,"Krushna",24);
+
+insert into table_name values(value1,.....),(value1,.....),(value1,.....);
+e.g.
+insert into student values(3,"Rani",22),(4,"Seeta",21),(5,"Ram",25);
+
+-: fetch record 
+select * from table_name;
+e.g.
+select * from student;
+
+/*------------------------*/
+
+show databases;
+create database batch_k_1319;
+show databases;
+use batch_k_1319;
+show tables;
+create table student(id int,name text,age int);
+show tables;
+describe student;
+desc student;
+insert into student(id,name,age) values(1,"Radha",23);
+select * from student;
+insert into student values(2,"Krushna",24);
+select * from student;
+insert into student values(3,"Rani",22),(4,"Seeta",21),(5,"Ram",25);
+select * from student;
+
+Batch Time -: 02.00 pm 
+
+/*-----------------------*/
+
+28-04-2026 
+
+-: Last Session 
+-: Mark Student's Attendance
+-: Today's Topic 
+-: SQL 
+
+-: create database 
+- show databases;
+- use database_name;
+- create table 
+- insert query 
+- select query 
+- desc query 
+
+- alter table table_name add column_name data_type;
+e.g.
+alter table student add city text;
+
+- drop table table_name;
+e.g.
+drop table student;
+
+- truncate table table_name;
+e.g.
+truncate table student;
+
+- drop database database_name;
+e.g.
+drop database batch_k_1319;
+
+- alter table table_name rename column old_name to new_name;
+e.g.
+alter table student rename column city to location;
+
+- alter table table_name drop column_name;
+e.g.
+alter table student drop location;
+
+- alter table student add city int;
+- alter table table_name modify column_name data_type;
+e.g.
+alter table student modify city text;
+
+- alter table table_name rename new_table_name;
+e.g.
+alter table student rename stud_info;
+
+alter table stud_info rename student;
+
+
+please provide 30 reocrds for insert query to student table for id,name,age and city
+
+INSERT INTO student (id, name, age, city) VALUES
+(1, 'Aarav Sharma', 20, 'Mumbai'),
+(2, 'Isha Verma', 21, 'Delhi'),
+(3, 'Rohan Gupta', 19, 'Bangalore'),
+(4, 'Sneha Patil', 22, 'Pune'),
+(5, 'Aditya Singh', 20, 'Lucknow'),
+(6, 'Neha Reddy', 23, 'Hyderabad'),
+(7, 'Karan Mehta', 21, 'Ahmedabad'),
+(8, 'Priya Nair', 22, 'Kochi'),
+(9, 'Rahul Das', 20, 'Kolkata'),
+(10, 'Ananya Iyer', 19, 'Chennai'),
+(11, 'Vikram Joshi', 24, 'Nagpur'),
+(12, 'Pooja Kapoor', 21, 'Chandigarh'),
+(13, 'Siddharth Jain', 22, 'Jaipur'),
+(14, 'Meera Kulkarni', 20, 'Pune'),
+(15, 'Arjun Mishra', 23, 'Varanasi'),
+(16, 'Kavya Shetty', 21, 'Mangalore'),
+(17, 'Nikhil Bansal', 22, 'Delhi'),
+(18, 'Divya Bhatt', 20, 'Surat'),
+(19, 'Manish Yadav', 24, 'Patna'),
+(20, 'Ritika Saxena', 19, 'Bhopal'),
+(21, 'Harsh Vardhan', 23, 'Indore'),
+(22, 'Tanvi Desai', 21, 'Mumbai'),
+(23, 'Abhishek Roy', 22, 'Kolkata'),
+(24, 'Simran Kaur', 20, 'Amritsar'),
+(25, 'Deepak Choudhary', 24, 'Jodhpur'),
+(26, 'Shreya Ghosh', 21, 'Durgapur'),
+(27, 'Amit Tiwari', 23, 'Kanpur'),
+(28, 'Nisha Agarwal', 22, 'Ranchi'),
+(29, 'Yash Thakur', 20, 'Shimla'),
+(30, 'Komal Pawar', 21, 'Nashik');
+
+- update table_name set column_name=value where column_name=value;
+e.g.
+update student set city="Pune";
+update student set city="Mumbai" where id=15;
+update student set city="Delhi" where id=10 and name="Ananya Iyer";
+update student set city="Jodhpur" where id=17 or age=22;
+
+- delete from table_name;
+e.g.
+delete from student; 
+delete from student where city="Pune";
+delete from student where age=20 and city="Jodhpur";
+delete from student where age=20 or city="Jodhpur";
+
+INSERT INTO student (id, name, age, city) VALUES
+(1, 'Aarav Sharma', 20, 'Mumbai'),
+(2, 'Isha Verma', 21, 'Delhi'),
+(3, 'Rohan Gupta', 19, 'Bangalore'),
+(4, 'Sneha Patil', 22, 'Pune'),
+(5, 'Aditya Singh', 20, 'Lucknow'),
+(6, 'Neha Reddy', 23, 'Hyderabad'),
+(7, 'Karan Mehta', 21, 'Ahmedabad'),
+(8, 'Priya Nair', 22, 'Kochi'),
+(9, 'Rahul Das', 20, 'Kolkata'),
+(10, 'Ananya Iyer', 19, 'Chennai'),
+(11, 'Vikram Joshi', 24, 'Nagpur'),
+(12, 'Pooja Kapoor', 21, 'Chandigarh'),
+(13, 'Siddharth Jain', 22, 'Jaipur'),
+(14, 'Meera Kulkarni', 20, 'Pune'),
+(15, 'Arjun Mishra', 23, 'Varanasi'),
+(16, 'Kavya Shetty', 21, 'Mangalore'),
+(17, 'Nikhil Bansal', 22, 'Delhi'),
+(18, 'Divya Bhatt', 20, 'Surat'),
+(19, 'Manish Yadav', 24, 'Patna'),
+(20, 'Ritika Saxena', 19, 'Bhopal'),
+(21, 'Harsh Vardhan', 23, 'Indore'),
+(22, 'Tanvi Desai', 21, 'Mumbai'),
+(23, 'Abhishek Roy', 22, 'Kolkata'),
+(24, 'Simran Kaur', 20, 'Amritsar'),
+(25, 'Deepak Choudhary', 24, 'Jodhpur'),
+(26, 'Shreya Ghosh', 21, 'Durgapur'),
+(27, 'Amit Tiwari', 23, 'Kanpur'),
+(28, 'Nisha Agarwal', 22, 'Ranchi'),
+(29, 'Yash Thakur', 20, 'Shimla'),
+(30, 'Komal Pawar', 21, 'Nashik');
+
+- select min(column_name) from table_name;
+e.g.
+select min(age) from student;
+
+- select max(column_name) from table_name;
+e.g.
+select max(age) as "Highest Age" from student;
+
+- select count(column_name) from table_name;
+e.g.
+select count(id) from student;
+select count(age)as "Total Student" from student;
+
+INSERT INTO student (id, name, age, city) VALUES (31, 'Sakshi Jagtap', null, 'Mumbai');
+
+- select sum(column_name) from table_name;
+e.g.
+select sum(age) as "Sum of Age" from student;
+
+- select avg(column_name) from table_name;
+e.g.
+select avg(age) as "Average of Age" from student;
+
+- select * from table_name;
+e.g.
+select * from student;
+
+- select column_name,.... from student;
+e.g.
+select name,age from student;
+select city,id,name from student;
+
+- fetch the record of student whose age is above 22 
+e.g.
+select * from student where age>22;
+
+- fetch the record of student whose age is 22 and above
+e.g.
+select * from student where age>=22;
+ 
+- fetch the record of student whose age is below 22 
+e.g.
+select * from student where age<22;
+
+- fetch the record of student whose age is 22 and below
+e.g.
+select * from student where age<=22;
+
+- fetch the record of student whose age is 22
+e.g.
+select * from student where age=22;
+
+- fetch the record of student whose age is not 22
+e.g.
+select * from student where age<> 22; (!=) 
+
+- fetch the record of student whose age is 22 and above and he belongs to "Mumbai" city 
+e.g.
+select * from student where age>=22 and city="Mumbai";
+
+- fetch the record of student whose age is 22 and above and may be he belongs to "Delhi" city 
+e.g.
+select * from student where age>=22 or city="Delhi";
+
+- fetch the record of student whose age is below 22 and he belongs to "Pune" city
+e.g.
+select * from student where age<=22 and city="Pune";
+
+- fetch the record of student whose age is below 22 and may be he belongs to "Jodhpur" city
+e.g.
+select * from student where age<22 or city="Jodhpur";
+
+- fetch the record of student whose age above 20 and below 23 
+e.g.
+select * from student where age>20 and age<23;
+select * from student where age >=20 and age <=23;
+
+- fetch the record of student whose age below 20 and above 23 
+e.g.
+select * from student where age<20 or age>23;
+
+- fetch the record of student whose age may be 22 21 and 20 
+e.g.
+select * from student where age=22 or age=21 or age=20;
+
+- fetch the record of student whose age may not be 22 21 and 20 
+e.g.
+select * from student where age age<>22 or age<>21 or age!=20;
+
+/*-----------------------*/
+
+show databases;
+use batch_k_1319;
+show tables;
+desc student;
+select * from student;
+alter table student add city text;
+desc student;
+select * from student;
+drop table student;
+show tables;
+create table student(id int,name text,age int);
+show tables;
+desc student;
+insert into student(id,name,age) values(1,"Radha",23);
+insert into student values(3,"Rani",22),(4,"Seeta",21),(5,"Ram",25);
+select * from student;
+insert into student values(2,"Krushna",24);
+select * from student;
+truncate table student;
+select * from student;
+show tables;
+desc student;
+insert into student(id,name,age) values(1,"Radha",23);
+insert into student values(3,"Rani",22),(4,"Seeta",21),(5,"Ram",25);
+insert into student values(2,"Krushna",24);
+select * from student;
+alter table student add city text;
+desc student;
+select * from student;
+alter table student rename column city to location;
+desc student;
+alter table student drop location;
+desc student;
+alter table student add city int;
+desc student;
+alter table student modify city text;
+desc student;
+alter table student rename stud_info;
+show tables;
+alter table stud_info rename student;
+show tables;
+truncate table student;
+select * from student;
+INSERT INTO student (id, name, age, city) VALUES
+(1, 'Aarav Sharma', 20, 'Mumbai'),
+(2, 'Isha Verma', 21, 'Delhi'),
+(3, 'Rohan Gupta', 19, 'Bangalore'),
+(4, 'Sneha Patil', 22, 'Pune'),
+(5, 'Aditya Singh', 20, 'Lucknow'),
+(6, 'Neha Reddy', 23, 'Hyderabad'),
+(7, 'Karan Mehta', 21, 'Ahmedabad'),
+(8, 'Priya Nair', 22, 'Kochi'),
+(9, 'Rahul Das', 20, 'Kolkata'),
+(10, 'Ananya Iyer', 19, 'Chennai'),
+(11, 'Vikram Joshi', 24, 'Nagpur'),
+(12, 'Pooja Kapoor', 21, 'Chandigarh'),
+(13, 'Siddharth Jain', 22, 'Jaipur'),
+(14, 'Meera Kulkarni', 20, 'Pune'),
+(15, 'Arjun Mishra', 23, 'Varanasi'),
+(16, 'Kavya Shetty', 21, 'Mangalore'),
+(17, 'Nikhil Bansal', 22, 'Delhi'),
+(18, 'Divya Bhatt', 20, 'Surat'),
+(19, 'Manish Yadav', 24, 'Patna'),
+(20, 'Ritika Saxena', 19, 'Bhopal'),
+(21, 'Harsh Vardhan', 23, 'Indore'),
+(22, 'Tanvi Desai', 21, 'Mumbai'),
+(23, 'Abhishek Roy', 22, 'Kolkata'),
+(24, 'Simran Kaur', 20, 'Amritsar'),
+(25, 'Deepak Choudhary', 24, 'Jodhpur'),
+(26, 'Shreya Ghosh', 21, 'Durgapur'),
+(27, 'Amit Tiwari', 23, 'Kanpur'),
+(28, 'Nisha Agarwal', 22, 'Ranchi'),
+(29, 'Yash Thakur', 20, 'Shimla'),
+(30, 'Komal Pawar', 21, 'Nashik');
+select * from student;
+update student set city="Pune";
+select * from student;
+update student set city="Mumbai" where id=15;
+select * from student;
+update student set city="Delhi" where id=10 and name="Ananya Iyer";
+select * from student;
+update student set city="Jodhpur" where id=17 or age=22;
+select * from student;
+delete from student;
+select * from student;
+INSERT INTO student (id, name, age, city) VALUES
+(1, 'Aarav Sharma', 20, 'Mumbai'),
+(2, 'Isha Verma', 21, 'Delhi'),
+(3, 'Rohan Gupta', 19, 'Bangalore'),
+(4, 'Sneha Patil', 22, 'Pune'),
+(5, 'Aditya Singh', 20, 'Lucknow'),
+(6, 'Neha Reddy', 23, 'Hyderabad'),
+(7, 'Karan Mehta', 21, 'Ahmedabad'),
+(8, 'Priya Nair', 22, 'Kochi'),
+(9, 'Rahul Das', 20, 'Kolkata'),
+(10, 'Ananya Iyer', 19, 'Chennai'),
+(11, 'Vikram Joshi', 24, 'Nagpur'),
+(12, 'Pooja Kapoor', 21, 'Chandigarh'),
+(13, 'Siddharth Jain', 22, 'Jaipur'),
+(14, 'Meera Kulkarni', 20, 'Pune'),
+(15, 'Arjun Mishra', 23, 'Varanasi'),
+(16, 'Kavya Shetty', 21, 'Mangalore'),
+(17, 'Nikhil Bansal', 22, 'Delhi'),
+(18, 'Divya Bhatt', 20, 'Surat'),
+(19, 'Manish Yadav', 24, 'Patna'),
+(20, 'Ritika Saxena', 19, 'Bhopal'),
+(21, 'Harsh Vardhan', 23, 'Indore'),
+(22, 'Tanvi Desai', 21, 'Mumbai'),
+(23, 'Abhishek Roy', 22, 'Kolkata'),
+(24, 'Simran Kaur', 20, 'Amritsar'),
+(25, 'Deepak Choudhary', 24, 'Jodhpur'),
+(26, 'Shreya Ghosh', 21, 'Durgapur'),
+(27, 'Amit Tiwari', 23, 'Kanpur'),
+(28, 'Nisha Agarwal', 22, 'Ranchi'),
+(29, 'Yash Thakur', 20, 'Shimla'),
+(30, 'Komal Pawar', 21, 'Nashik');
+select * from student;
+delete from student where city="Pune";
+select * from student;
+delete from student where age=20 and city="Jodhpur";
+select * from student;
+delete from student where age=20 or city="Jodhpur";
+select * from student;
+delete from student;
+select * from student;
+INSERT INTO student (id, name, age, city) VALUES
+(1, 'Aarav Sharma', 20, 'Mumbai'),
+(2, 'Isha Verma', 21, 'Delhi'),
+(3, 'Rohan Gupta', 19, 'Bangalore'),
+(4, 'Sneha Patil', 22, 'Pune'),
+(5, 'Aditya Singh', 20, 'Lucknow'),
+(6, 'Neha Reddy', 23, 'Hyderabad'),
+(7, 'Karan Mehta', 21, 'Ahmedabad'),
+(8, 'Priya Nair', 22, 'Kochi'),
+(9, 'Rahul Das', 20, 'Kolkata'),
+(10, 'Ananya Iyer', 19, 'Chennai'),
+(11, 'Vikram Joshi', 24, 'Nagpur'),
+(12, 'Pooja Kapoor', 21, 'Chandigarh'),
+(13, 'Siddharth Jain', 22, 'Jaipur'),
+(14, 'Meera Kulkarni', 20, 'Pune'),
+(15, 'Arjun Mishra', 23, 'Varanasi'),
+(16, 'Kavya Shetty', 21, 'Mangalore'),
+(17, 'Nikhil Bansal', 22, 'Delhi'),
+(18, 'Divya Bhatt', 20, 'Surat'),
+(19, 'Manish Yadav', 24, 'Patna'),
+(20, 'Ritika Saxena', 19, 'Bhopal'),
+(21, 'Harsh Vardhan', 23, 'Indore'),
+(22, 'Tanvi Desai', 21, 'Mumbai'),
+(23, 'Abhishek Roy', 22, 'Kolkata'),
+(24, 'Simran Kaur', 20, 'Amritsar'),
+(25, 'Deepak Choudhary', 24, 'Jodhpur'),
+(26, 'Shreya Ghosh', 21, 'Durgapur'),
+(27, 'Amit Tiwari', 23, 'Kanpur'),
+(28, 'Nisha Agarwal', 22, 'Ranchi'),
+(29, 'Yash Thakur', 20, 'Shimla'),
+(30, 'Komal Pawar', 21, 'Nashik');
+select * from student;
+select min(age) from student;
+select max(age) as "Highest Age" from student;
+select count(id) from student;
+select count(age)as "Total Student" from student;
+INSERT INTO student (id, name, age, city) VALUES (31, 'Sakshi Jagtap', null, 'Mumbai');
+select * from student;
+select count(age)as "Total Student" from student;
+select count(id) from student;
+select sum(age) as "Sum of Age" from student;
+select avg(age) as "Average of Age" from student;
+select name,age from student;
+select city,id,name from student;
+select * from student where age>22;
+select * from student where age>=22;
+select * from student where age>20 and age<23;
+select * from student where age >=20 and age <=23;
+select * from student where age<20 or age>23;
+select * from student where age=22 or age=21 or age=20;
+select * from student where age <>22 or age<>21 or age!=20;
+
+/*-----------------------*/
+
+29-04-2026
+
+-: fetch the record of student whose age is from 20 to 23 
+e.g.
+select * from student where age between 20 and 23;
+
+-: fetch the record of student whose age is not from 20 to 23
+e.g.
+select * from student where age not between 20 and 23; 
+
+-: fetch the record of student whose age is 20,22 and 24 
+e.g.
+select * from student where age in(20,22,24);
+
+-: show the record of student whose age is not 20,22 and 24;
+e.g.
+select * from student where age not in(20,22,24);
+
+-: show the record of student whose belongs to "Pune", "Mumabi" and "Delhi"
+-: show the record of student whose not belongs to "Pune", "Mumabi" and "Delhi"
+-: show the record of student whose belongs to "Pune", "Mumabi" and "Delhi" and age is 20,22 and 24 
+-: show the record of student whose belongs to "Pune", "Mumabi" and "Delhi" and may be his age is not 20,22 and 24;
+
+-: like 
+	- '%' - one or more character  
+	- '-' - zero or one character 
+	
+-: show the record of student whose name end with 'a'
+e.g.
+select * from student where name like '%a';
+
+-: show the record of student whose name start with 'a'
+e.g.
+select * from student where name like 'a%';
+
+-: show student record whose name has 'o' 
+e.g.
+select * from student where name like '_o%';
+
+-: is null 
+e.g.
+select * from student where age is null;
+
+-: is not null 
+e.g.
+select * from student where age is not null;
+
+-: distinct 
+- show all age of student;
+e.g.
+select age from student;
+
+- show all city in a table 
+e.g.
+select city from student;
+
+- select distinct age from student;
+- select distinct city from student;
+
+-: order by 
+select * from student;
+
+- ascending order of age
+select * from student order by age;
+select * from student order by age asc;
+
+- descending order of age 
+select * from student order by age desc;
+
+- descending order of name 
+- descending order of city 
+- ascending order of name 
+- ascending order of city 
+
+-: group by 
+select * from student where city="Pune";
+
+select count(city) from student;
+select count(city) from student group by city;
+select count(city) as 'Total Student' , city from student group by city;
+
+-: having 
+select count(city) as 'Total Student',city from student group by city having count(city)>=2; 
+
+- show total student whose count is 1 
+- show count of student by age 
+- show count of student by age where count is 2 and below 
+- show count of student by age where count is 2 and above 
+
+-: limit 
+select * from student;
+select * from student limit 5;
+select * from student limit 5, 10;
+
+select * from student order by age limit 5;
+
+- show first 5 name of student in ascending order 
+- show last 5 name of student
+select * from student order by id desc limit 5;
+
+-: sub query / nested query 
+
+- show Highest age in table 
+select max(age) from student;
+
+- show lowest age in table 
+select min(age) from student;
+
+- show student record whose age lowest 
+select * from student;
+select * from student where age=19;
+select * from student where age=(select min(age) from student);
+
+- show student record whose age Highest
+
+- show 2nd Highest age in table
+select max(age) from student;
+select max(age) from student where age<(select max(age) from student);
+
+- show 2nd lowest age in table
+select min(age) from student where age>(select min(age) from student);
+
+- show student record whose age is 2nd lowest age in table
+select * from student where age=(select min(age) from student where age>(select min(age) from student));
+
+- show student record whose age is 2nd Highest age in table
+select * from student where age=(select max(age) from student where age<(select max(age) from student));
+
+/*---------------------*/
+
+show databases;
+use batch_k_1319;
+show tables;
+desc student;
+select * from student;
+select * from student where age between 20 and 23;
+select * from student where age not between 20 and 23; 
+select * from student where age in(20,22,24);
+select * from student where age not in(20,22,24);
+select * from student where name like '%a';
+select * from student where name like 'a%';
+select * from student where name like '_o%';
+select * from student where age is null;
+select * from student where age is not null;
+select age from student;
+select city from student;
+select distinct age from student;
+select distinct city from student;
+select * from student;
+select * from student order by age;
+select * from student order by age desc;
+select * from student order by age asc;
+select * from student where city="Pune";
+select count(city) from student;
+select count(city) from student group by city;
+select count(city) as 'Total Student' , city from student group by city;
+select count(city)as 'Total Student',city from student group by city having count(city)>=2;
+select * from student;
+select * from student limit 5;
+select * from student limit 5, 10;
+select * from student order by age limit 5;
+select * from student order by id desc limit 5;
+select max(age) from student;
+select min(age) from student;
+select * from student;
+select * from student where age=19;
+select * from student where age=(select min(age) from student);
+select max(age) from student;
+select max(age) from student where age<(select max(age) from student);
+select min(age) from student where age>(select min(age) from student);
+select * from student where age>(select min(age) from student);
+select * from student where age=(select min(age) from student where age>(select min(age) from student));
+select * from student where age=(select max(age) from student where age<(select max(age) from student));
+
+/*--------------------------*/
+
+30-04-2026
+
+-: Test 
+create table employee(id int,name text,profile text,email text,salary int,age int,experience int);
+
+insert into employee values
+(1,"rani","dev","rani@gmail.com",11000,43,27),
+(2,"raj","test","raj@gmail.com",21000,33,17),
+(3,"radha","test","radha@gmail.com",26000,38,21),
+(4,"raj","dev","raj12@gmail.com",51000,32,12),
+(5,"john","dev","john@gmail.com",51000,39,27);
+
+1. As a user I want only those employee names who has salary more than 20K.
+select name from employee where salary>20000;
+
+2. As a user I want all the employee information who has salary 51K.
+select * from employee where salary=51000;
+
+3. As a user I want only name and experience who has age more than 35.
+select name,experience from employee where age>35; 
+
+4. As a user, I want only those employees whoâ€™s belongs to dev profile. 
+select * from employee where profile="dev";
+
+5. As a user, I want those employee names who has profile test.
+select * from employee where profile="test";
+
+6. As a user I want record of employee who has salary 25K and more than 25K.
+select * from employee where salary>=25000;
+
+7. As a user I want to those employee name and email those are not having 
+salary 51K. 
+select name,email from employee where salary<>51000;
+
+8. As a user I want to update the employee salary by 10K who is having 
+experience less than 20 years. 
+update employee set salary=salary+10000 where experience<20;
+
+9. As a user I want to remove employee record who is having 21 years of 
+experience as he/she left the job. 
+delete from employee where experience=21;
+
+10. As a user I want to decrease the salary of john by 21K as company want to perform cost cutting.
+update employee set salary=salary-21000 where name="john";
+
+insert into student values(30,"Radha Joshi",23,"Pune");
+
+create table student(id int primary key,name text,age int, city text);
+
+create table student(id int,name text,age int,city text);
+
+alter table student add constraint primary key (id);
+
+alter table Student drop primary key;
+
+insert into student values(31,null,23,"Pune");
+
+create table student(id int primary key,name text not null,age int,city text);
+
+/*-----------------------------*/
+
+show databases;
+use batch_k_1319;
+show tables;
+desc student;
+select * from student;
+insert into student values(30,"Radha Joshi",23,"Pune");
+select * from student where id=30;
+drop table student;
+show tables;
+create table student(id int primary key,name text,age int, city text);
+show tables;
+desc student;
+INSERT INTO student (id, name, age, city) VALUES
+(1, 'Aarav Sharma', 20, 'Mumbai'),
+(2, 'Isha Verma', 21, 'Delhi'),
+(3, 'Rohan Gupta', 19, 'Bangalore'),
+(4, 'Sneha Patil', 22, 'Pune'),
+(5, 'Aditya Singh', 20, 'Lucknow'),
+(6, 'Neha Reddy', 23, 'Hyderabad'),
+(7, 'Karan Mehta', 21, 'Ahmedabad'),
+(8, 'Priya Nair', 22, 'Kochi'),
+(9, 'Rahul Das', 20, 'Kolkata'),
+(10, 'Ananya Iyer', 19, 'Chennai'),
+(11, 'Vikram Joshi', 24, 'Nagpur'),
+(12, 'Pooja Kapoor', 21, 'Chandigarh'),
+(13, 'Siddharth Jain', 22, 'Jaipur'),
+(14, 'Meera Kulkarni', 20, 'Pune'),
+(15, 'Arjun Mishra', 23, 'Varanasi'),
+(16, 'Kavya Shetty', 21, 'Mangalore'),
+(17, 'Nikhil Bansal', 22, 'Delhi'),
+(18, 'Divya Bhatt', 20, 'Surat'),
+(19, 'Manish Yadav', 24, 'Patna'),
+(20, 'Ritika Saxena', 19, 'Bhopal'),
+(21, 'Harsh Vardhan', 23, 'Indore'),
+(22, 'Tanvi Desai', 21, 'Mumbai'),
+(23, 'Abhishek Roy', 22, 'Kolkata'),
+(24, 'Simran Kaur', 20, 'Amritsar'),
+(25, 'Deepak Choudhary', 24, 'Jodhpur'),
+(26, 'Shreya Ghosh', 21, 'Durgapur'),
+(27, 'Amit Tiwari', 23, 'Kanpur'),
+(28, 'Nisha Agarwal', 22, 'Ranchi'),
+(29, 'Yash Thakur', 20, 'Shimla'),
+(30, 'Komal Pawar', 21, 'Nashik');
+select * from student;
+insert into student values(31,"Radha Joshi",23,"Pune");
+select * from student;
+drop table student;
+show tables;
+create table student(id int,name text,age int,city text);
+show tables;
+desc student;
+select * from student;
+alter table student add constraint primary key (id);
+desc student;
+alter table Student drop primary key;
+desc student;
+select * from student;
+insert into student values(31,null,23,"Pune");
+select * from student;
+drop table student;
+show tables;
+create table student(id int primary key,name text not null,age int,city text);
+show tables;
+desc student;
+select * from student;
+-- insert into student values(31,null,23,"Pune");
+insert into student values(31,"Radhi Joshi",23,"Pune");
+select * from student;
+
+/*------------*/
+
+04-05-2026
+
+-: Last Session 
+-: Mark Student's Attendance
+-: Today's Topic 
+-: foreign key 
+
+1. As a user, I want to add an column branch_location so I can efficiently search the branch wise record. 
+alter table employee add branch_location text;
+
+2. As a user, I want to check the total salary expenses on employees.
+select sum(salary) as "total salary" from employee;
+
+3. As a user, I want to see the max salary of employee from test profile.
+select max(salary) as "max salary" from employee where profile="test";
+
+4. As a user I want to get the average experience level of employees. 
+select avg(experience) from employee;
+
+5. As a user I want to see the name of highest paid employee. 
+select name from employee where salary=(select max(salary) from employee);
+
+6. As a user, I want to see the name and experience of lowest paid employee. 
+select name,experience from employee where salary=(select min(salary) from employee);
+
+7. As a user I want check how many employees are working in company.
+select count(*) as "total employee" from employee;
+
+8. As a user I want to see those employee names who are from test profile and having salary more than 25K.
+select name from employee where profile="test" and salary>25000;
+
+9. As a user, I want to shift Radha on support profile. 
+update employee ser profile="support" where name="Radha";
+
+10. As a user, I want to get the second highest salary of employee. 
+select max(salary) as "2nd highest salary" from employee where salary<(select max(salary) from employee);
+
+11. As a user I want to get the second lowest salary of employee. 
+select min(salary) as "2nd lowest salary" from employee where salary>(select min(salary) from employee);
+
+12. As a user, I want to calculate the average salary of employees those are belongs to dev profile. 
+select avg(salary) as "average salary" from employee where profile="dev";
+
+13. As a user, I want to see the employeeâ€™s name and salary who is having lowest experience.  
+select name,salary from employee where experience=(select min(experience) from employee);
+
+14.  As a user, I want to see the employee name who is having lowest age with max salary. 
+select name from employee where age=(select min(age) from employee) and salary=(select max(salary) from employee);
+
+15. As a user, I want to remove all the employee from company.
+delete from employee;
+
+
+- create table department(id int primary key,name text);
+- create table employee(id int primary key,name text,age int, salary double,d_id int,foreign key(d_id) references department(id));
+
+- create table employee(id int primary key,name text,age int, salary double);
+- alter table employee add d_id int;
+- alter table employee add constraint fk_deptid foreign key (d_id) references department(id);
+- alter table employee drop foreign key fk_deptid;
+
+INSERT INTO department (id, name) 
+VALUES 
+    (101, 'Human Resources'),
+    (102, 'Finance'),
+    (103, 'Marketing'),
+    (104, 'Information Technology'),
+    (105, 'Sales'),
+    (106, 'Operations'),
+    (107, 'Legal'),
+    (108, 'Customer Service'),
+    (109, 'Research and Development'),
+    (110, 'Quality Assurance');
+	
+
+INSERT INTO employee (id, name, age, salary, d_id) VALUES
+(1, 'James Smith', 30, 75000, 101),
+(2, 'Mary Johnson', 28, 68000, 102),
+(3, 'Robert Brown', 45, 95000, 103),
+(4, 'Patricia Garcia', 32, 72000, 101),
+(5, 'Michael Miller', 38, 88000, 104),
+(6, 'Linda Davis', 26, 62000, 102),
+(7, 'William Rodriguez', 41, 91000, 103),
+(8, 'Elizabeth Martinez', 29, 69000, 105),
+(9, 'David Hernandez', 35, 82000, 101),
+(10, 'Barbara Lopez', 40, 85000, 104),
+(11, 'Richard Gonzalez', 33, 74000, 102),
+(12, 'Susan Wilson', 27, 60000, 105),
+(13, 'Joseph Anderson', 44, 98000, 103),
+(14, 'Jessica Thomas', 31, 71000, 101),
+(15, 'Thomas Taylor', 36, 80000, 104),
+(16, 'Sarah Moore', 25, 58000, 102),
+(17, 'Charles Jackson', 39, 87000, 103),
+(18, 'Karen Martin', 34, 76000, 105),
+(19, 'Christopher Lee', 42, 92000, 101),
+(20, 'Nancy Perez', 29, 67000, 102),
+(21, 'Matthew Thompson', 37, 84000, 104),
+(22, 'Margaret White', 46, 105000, 103),
+(23, 'Anthony Harris', 28, 69500, 101),
+(24, 'Betty Sanchez', 32, 73000, 105),
+(25, 'Mark Clark', 30, 70000, 102),
+(26, 'Lisa Ramirez', 33, 75500, 104),
+(27, 'Donald Lewis', 41, 89000, 103),
+(28, 'Dorothy Robinson', 27, 61000, 101),
+(29, 'Steven Walker', 35, 83000, 105),
+(30, 'Sandra Young', 31, 72500, 102);
+
+- create table employee(id int primary key,name text,age int, salary double,d_id int,foreign key(d_id) references department(id) on update cascade);
+
+
+- create table employee(id int primary key,name text,age int, salary double,d_id int,foreign key(d_id) references department(id) on delete cascade);
+
+
+/*------------------------------*/
+
+show databases;
+use batch_k_1319;
+show tables;
+desc student;
+create table department(id int primary key,name text);
+INSERT INTO department (id, name) 
+VALUES 
+    (1, 'Human Resources'),
+    (2, 'Finance'),
+    (3, 'Marketing'),
+    (4, 'Information Technology'),
+    (5, 'Sales'),
+    (6, 'Operations'),
+    (7, 'Legal'),
+    (8, 'Customer Service'),
+    (9, 'Research and Development'),
+    (10, 'Quality Assurance');
+select * from department;
+create table employee(id int primary key,name text,age int, salary double,d_id int,foreign key(d_id) references department(id));
+show tables;
+desc department;
+desc employee;
+drop table employee;
+show tables;
+create table employee(id int primary key,name text,age int, salary double);
+show tables;
+desc employee;
+alter table employee add d_id int;
+desc employee;
+alter table employee add constraint fk_deptid foreign key (d_id) references department(id);
+desc employee;
+delete from department;
+show tables;
+desc department;
+desc employee;
+select * from employee;
+select * from department;
+
+INSERT INTO department (id, name) 
+VALUES 
+    (101, 'Human Resources'),
+    (102, 'Finance'),
+    (103, 'Marketing'),
+    (104, 'Information Technology'),
+    (105, 'Sales'),
+    (106, 'Operations'),
+    (107, 'Legal'),
+    (108, 'Customer Service'),
+    (109, 'Research and Development'),
+    (110, 'Quality Assurance');
+select * from department;
+INSERT INTO employee (id, name, age, salary, d_id) VALUES
+(1, 'James Smith', 30, 75000, 101),
+(2, 'Mary Johnson', 28, 68000, 102),
+(3, 'Robert Brown', 45, 95000, 103),
+(4, 'Patricia Garcia', 32, 72000, 101),
+(5, 'Michael Miller', 38, 88000, 104),
+(6, 'Linda Davis', 26, 62000, 102),
+(7, 'William Rodriguez', 41, 91000, 103),
+(8, 'Elizabeth Martinez', 29, 69000, 105),
+(9, 'David Hernandez', 35, 82000, 101),
+(10, 'Barbara Lopez', 40, 85000, 104),
+(11, 'Richard Gonzalez', 33, 74000, 102),
+(12, 'Susan Wilson', 27, 60000, 105),
+(13, 'Joseph Anderson', 44, 98000, 103),
+(14, 'Jessica Thomas', 31, 71000, 101),
+(15, 'Thomas Taylor', 36, 80000, 104),
+(16, 'Sarah Moore', 25, 58000, 102),
+(17, 'Charles Jackson', 39, 87000, 103),
+(18, 'Karen Martin', 34, 76000, 105),
+(19, 'Christopher Lee', 42, 92000, 101),
+(20, 'Nancy Perez', 29, 67000, 102),
+(21, 'Matthew Thompson', 37, 84000, 104),
+(22, 'Margaret White', 46, 105000, 103),
+(23, 'Anthony Harris', 28, 69500, 101),
+(24, 'Betty Sanchez', 32, 73000, 105),
+(25, 'Mark Clark', 30, 70000, 102),
+(26, 'Lisa Ramirez', 33, 75500, 104),
+(27, 'Donald Lewis', 41, 89000, 103),
+(28, 'Dorothy Robinson', 27, 61000, 101),
+(29, 'Steven Walker', 35, 83000, 105),
+(30, 'Sandra Young', 31, 72500, 102);
+
+select * from employee;
+select * from department;
+select * from employee where d_id=103;
+delete from department where id=103;
+update department set id=203 where id=103;
+drop table employee;
+show tables;
+create table employee(id int primary key,name text,age int, salary double,d_id int,foreign key(d_id) references department(id) on update cascade);
+show tables;
+INSERT INTO employee (id, name, age, salary, d_id) VALUES
+(1, 'James Smith', 30, 75000, 101),
+(2, 'Mary Johnson', 28, 68000, 102),
+(3, 'Robert Brown', 45, 95000, 103),
+(4, 'Patricia Garcia', 32, 72000, 101),
+(5, 'Michael Miller', 38, 88000, 104),
+(6, 'Linda Davis', 26, 62000, 102),
+(7, 'William Rodriguez', 41, 91000, 103),
+(8, 'Elizabeth Martinez', 29, 69000, 105),
+(9, 'David Hernandez', 35, 82000, 101),
+(10, 'Barbara Lopez', 40, 85000, 104),
+(11, 'Richard Gonzalez', 33, 74000, 102),
+(12, 'Susan Wilson', 27, 60000, 105),
+(13, 'Joseph Anderson', 44, 98000, 103),
+(14, 'Jessica Thomas', 31, 71000, 101),
+(15, 'Thomas Taylor', 36, 80000, 104),
+(16, 'Sarah Moore', 25, 58000, 102),
+(17, 'Charles Jackson', 39, 87000, 103),
+(18, 'Karen Martin', 34, 76000, 105),
+(19, 'Christopher Lee', 42, 92000, 101),
+(20, 'Nancy Perez', 29, 67000, 102),
+(21, 'Matthew Thompson', 37, 84000, 104),
+(22, 'Margaret White', 46, 105000, 103),
+(23, 'Anthony Harris', 28, 69500, 101),
+(24, 'Betty Sanchez', 32, 73000, 105),
+(25, 'Mark Clark', 30, 70000, 102),
+(26, 'Lisa Ramirez', 33, 75500, 104),
+(27, 'Donald Lewis', 41, 89000, 103),
+(28, 'Dorothy Robinson', 27, 61000, 101),
+(29, 'Steven Walker', 35, 83000, 105),
+(30, 'Sandra Young', 31, 72500, 102);
+select * from employee;
+select * from employee where d_id=103;
+select * from department where id=103;
+update department set id=203 where name="Marketing";
+select * from department where id=203;
+select * from employee where d_id=203;
+drop table employee;
+show tables;
+create table employee(id int primary key,name text,age int, salary double,d_id int,foreign key(d_id) references department(id) on delete cascade);
+show tables;
+desc employee;
+update department set id=103 where name="Marketing";
+INSERT INTO employee (id, name, age, salary, d_id) VALUES
+(1, 'James Smith', 30, 75000, 101),
+(2, 'Mary Johnson', 28, 68000, 102),
+(3, 'Robert Brown', 45, 95000, 103),
+(4, 'Patricia Garcia', 32, 72000, 101),
+(5, 'Michael Miller', 38, 88000, 104),
+(6, 'Linda Davis', 26, 62000, 102),
+(7, 'William Rodriguez', 41, 91000, 103),
+(8, 'Elizabeth Martinez', 29, 69000, 105),
+(9, 'David Hernandez', 35, 82000, 101),
+(10, 'Barbara Lopez', 40, 85000, 104),
+(11, 'Richard Gonzalez', 33, 74000, 102),
+(12, 'Susan Wilson', 27, 60000, 105),
+(13, 'Joseph Anderson', 44, 98000, 103),
+(14, 'Jessica Thomas', 31, 71000, 101),
+(15, 'Thomas Taylor', 36, 80000, 104),
+(16, 'Sarah Moore', 25, 58000, 102),
+(17, 'Charles Jackson', 39, 870/*-------------------------*/
+
+, 103),
+(18, 'Karen Martin', 34, 76000, 105),
+(19, 'Christopher Lee', 42, 92000, 101),
+(20, 'Nancy Perez', 29, 67000, 102),
+(21, 'Matthew Thompson', 37, 84000, 104),
+(22, 'Margaret White', 46, 105000, 103),
+(23, 'Anthony Harris', 28, 69500, 101),
+(24, 'Betty Sanchez', 32, 73000, 105),
+(25, 'Mark Clark', 30, 70000, 102),
+(26, 'Lisa Ramirez', 33, 75500, 104),
+(27, 'Donald Lewis', 41, 89000, 103),
+(28, 'Dorothy Robinson', 27, 61000, 101),
+(29, 'Steven Walker', 35, 83000, 105),
+(30, 'Sandra Young', 31, 72500, 102);
+select * from employee;
+select * from employee where d_id=103;
+select * from department where id=103;
+delete from department where id=103;
+
+
+
+/*-------------------------*/
+
+05-05-2026
+
+-: Last Session 
+-: Mark Student's Attendance 
+-: Today's Topic 
+-: join 
+
+create table student(id int primary key,name text,age int check(age>=18 and age<=30),city text);
+
+create table student(id int primary key,name text,age int,city text);
+alter table student add constraint check_student_age check(age>=18 and age<=30);
+alter table student drop check check_student_age;
+
+INSERT INTO student (id, name, age, city) VALUES
+(1, 'Aarav Sharma', 20, 'Mumbai'),
+(2, 'Isha Verma', 21, 'Delhi'),
+(3, 'Rohan Gupta', 19, 'Bangalore'),
+(4, 'Sneha Patil', 22, 'Pune'),
+(5, 'Aditya Singh', 20, 'Lucknow'),
+(6, 'Neha Reddy', 23, 'Hyderabad'),
+(7, 'Karan Mehta', 21, 'Ahmedabad'),
+(8, 'Priya Nair', 22, 'Kochi'),
+(9, 'Rahul Das', 20, 'Kolkata'),
+(10, 'Ananya Iyer', 19, 'Chennai'),
+(11, 'Vikram Joshi', 24, 'Nagpur'),
+(12, 'Pooja Kapoor', 21, 'Chandigarh'),
+(13, 'Siddharth Jain', 22, 'Jaipur'),
+(14, 'Meera Kulkarni', 20, 'Pune'),
+(15, 'Arjun Mishra', 23, 'Varanasi'),
+(16, 'Kavya Shetty', 21, 'Mangalore'),
+(17, 'Nikhil Bansal', 22, 'Delhi'),
+(18, 'Divya Bhatt', 20, 'Surat'),
+(19, 'Manish Yadav', 24, 'Patna'),
+(20, 'Ritika Saxena', 19, 'Bhopal'),
+(21, 'Harsh Vardhan', 23, 'Indore'),
+(22, 'Tanvi Desai', 21, 'Mumbai'),
+(23, 'Abhishek Roy', 22, 'Kolkata'),
+(24, 'Simran Kaur', 20, 'Amritsar'),
+(25, 'Deepak Choudhary', 24, 'Jodhpur'),
+(26, 'Shreya Ghosh', 21, 'Durgapur'),
+(27, 'Amit Tiwari', 23, 'Kanpur'),
+(28, 'Nisha Agarwal', 22, 'Ranchi'),
+(29, 'Yash Thakur', 20, 'Shimla'),
+(30, 'Komal Pawar', 21, 'Nashik');
+
+insert into student values(31,"sakshi kale",32,"Pune");
+
+-: default 
+
+create table student(id int primary key,name varchar(255) default 'N/A',age int,city text);
+
+create table student(id int primary key,name varchar(255),age int,city text);
+alter table student alter name set default "Not Applicable";
+
+alter table student alter name drop default;
+
+create table student(id int primary key auto_increment,name text,age int,city text);
+
+
+/*-------------------------*/
+
+show databases;
+use batch_k_1319;
+show tables;
+desc student;
+select * from student;
+drop table student;
+show tables;
+create table student(id int primary key,name text,age int check(age>=18 and age<=30),city text);
+show tables;
+desc student;
+INSERT INTO student (id, name, age, city) VALUES
+(1, 'Aarav Sharma', 20, 'Mumbai'),
+(2, 'Isha Verma', 21, 'Delhi'),
+(3, 'Rohan Gupta', 19, 'Bangalore'),
+(4, 'Sneha Patil', 22, 'Pune'),
+(5, 'Aditya Singh', 20, 'Lucknow'),
+(6, 'Neha Reddy', 23, 'Hyderabad'),
+(7, 'Karan Mehta', 21, 'Ahmedabad'),
+(8, 'Priya Nair', 22, 'Kochi'),
+(9, 'Rahul Das', 20, 'Kolkata'),
+(10, 'Ananya Iyer', 19, 'Chennai'),
+(11, 'Vikram Joshi', 24, 'Nagpur'),
+(12, 'Pooja Kapoor', 21, 'Chandigarh'),
+(13, 'Siddharth Jain', 22, 'Jaipur'),
+(14, 'Meera Kulkarni', 20, 'Pune'),
+(15, 'Arjun Mishra', 23, 'Varanasi'),
+(16, 'Kavya Shetty', 21, 'Mangalore'),
+(17, 'Nikhil Bansal', 22, 'Delhi'),
+(18, 'Divya Bhatt', 20, 'Surat'),
+(19, 'Manish Yadav', 24, 'Patna'),
+(20, 'Ritika Saxena', 19, 'Bhopal'),
+(21, 'Harsh Vardhan', 23, 'Indore'),
+(22, 'Tanvi Desai', 21, 'Mumbai'),
+(23, 'Abhishek Roy', 22, 'Kolkata'),
+(24, 'Simran Kaur', 20, 'Amritsar'),
+(25, 'Deepak Choudhary', 24, 'Jodhpur'),
+(26, 'Shreya Ghosh', 21, 'Durgapur'),
+(27, 'Amit Tiwari', 23, 'Kanpur'),
+(28, 'Nisha Agarwal', 22, 'Ranchi'),
+(29, 'Yash Thakur', 20, 'Shimla'),
+(30, 'Komal Pawar', 21, 'Nashik');
+select * from student;
+insert into student values(31,"sakshi kale",32,"Pune");
+drop table student;
+show tables;
+create table student(id int primary key,name text,age int,city text);
+insert into student values(31,"sakshi kale",23,"Pune");
+select * from student;
+alter table student add constraint check_student_age check(age>=18 and age<=30);
+desc student;
+insert into student values(32,"dhruv patil",10,"Pune");
+alter table student drop check check_student_age;
+drop table student;
+show tables;
+create table student(id int primary key,name varchar(255) default 'N/A',age int,city text);
+show tables;
+desc student;
+insert into student values(31,"Sakshi Kale",23,"Pune");
+select * from student;
+insert into student(id,age,city) values(32,20,"Mumbai");
+select * from student;
+drop table student;
+show tables;
+create table student(id int primary key,name varchar(255),age int,city text);
+desc student;
+alter table student alter name set default "Not Applicable";
+desc student;
+insert into student values(31,"Sakshi Kale",23,"Pune");
+select * from student;
+insert into student(id,age,city) values(32,20,"Mumbai");
+select * from student;
+alter table student alter name drop default;
+desc student;
+drop table student;
+show tables;
+create table student(id int primary key auto_increment,name text,age int,city text);
+show tables;
+desc student;
+insert into student values(31,"Sakshi Kale",23,"Pune");
+select * from student;
+insert into student(name,age,city) values("Radha Joshi",20,"Mumbai");
+select * from student;
+
+
+/*---------------------*/
+
+06-05-2026
+
+- unique 
+	- null value is allowed 
+	- duplicate value is not allowed 
+	
+- create table Student (id int primary key auto_increment,name text,phone bigint unique,age int,city text);
+
+insert into student (name,phone,age,city) values("Radha Joshi",1234567890,23,"Pune");
+insert into student (name,phone,age,city) values("Dhruv Patil",1234567890,24,"Mumbai");
+
+insert into student (name,phone,age,city) values("Dhruv Patil",null,24,"Mumbai");
+
+
+create table Student (id int primary key auto_increment,name text,phone bigint,age int,city text);
+alter table student add constraint stud_phone unique(phone);
+alter table student drop index stud_phone;
+
+create table Student (id int primary key auto_increment,name text,phone bigint not null unique,age int,city text);
+
+-: join
+
+- create a table of customers with id,name and city 
+- create a table of orders with id order amount and Customer id;
+- and insert record in both table 
+
+create table customers(cust_id int not null primary key,cust_name text,cust_city text);
+insert into customers values(1,'rohan','pune');
+insert into customers values(6,'pooja','thane');
+insert into customers values(4,'geeta','satara');
+insert into customers values(2,'nilesh','nagpur');
+insert into customers values(3,'rahul','mumbai');
+insert into customers values(7,'aditya','solapur');
+insert into customers values(10,'anulekha','raigad');
+
+create table orders(order_id int not null primary key,order_amount double,cust_id int);
+insert into orders values(1,30000,10);
+insert into orders values(2,35000,4);
+insert into orders values(3,35000,2);
+insert into orders values(4,35000,3);
+insert into orders values(5,35000,6);
+insert into orders values(6,35000,7);
+insert into orders values(7,35000,1);
+
+select customers.cust_id,customers.cust_name,orders.order_amount from Customers inner join orders on orders.cust_id=customers.cust_id;
+
+insert into customers values(11,'radha','pune');
+
+
+select customers.cust_id,customers.cust_name,orders.order_amount from Customers left join orders on orders.cust_id=customers.cust_id;
+
+insert into orders values(10,40000,12);
+
+select customers.cust_id,customers.cust_name,orders.order_amount,orders.order_id from Customers right join orders on orders.cust_id=customers.cust_id;
+
+select customers.cust_id,customers.cust_name,orders.order_amount,orders.order_id from Customers cross join orders; 
+
+select customers.cust_id,customers.cust_name,orders.order_amount,orders.order_id from Customers left join orders on orders.cust_id=customers.cust_id union select customers.cust_id,customers.cust_name,orders.order_amount,orders.order_id from Customers right join orders on orders.cust_id=customers.cust_id;
+
+
+select name,age,salary from employee where salary > any (select salary from employee where d_id=105);
+
+select name,age,salary from employee where salary < any (select salary from employee where d_id=105);
+
+
+/*-----------------------------------*/
+
+show databases;
+use batch_k_1319;
+show tables;
+desc student;
+drop table student;
+show tables;
+create table Student (id int primary key auto_increment,name text,phone bigint unique,age int,city text);
+show tables;
+desc student;
+select * from student;
+insert into student (name,phone,age,city) values("Radha Joshi",1234567890,23,"Pune");
+select * from student;
+insert into student (name,phone,age,city) values("Dhruv Patil",1234567890,24,"Mumbai");
+insert into student (name,phone,age,city) values("Dhruv Patil",null,24,"Mumbai");
+select * from student;
+drop table student;
+show tables;
+create table Student (id int primary key auto_increment,name text,phone bigint,age int,city text);
+show tables;
+desc student;
+alter table student add constraint stud_phone unique(phone);
+desc student;
+alter table student drop index stud_phone;
+desc student;
+create table customers(cust_id int not null primary key,cust_name text,cust_city text);
+insert into customers values(1,'rohan','pune');
+insert into customers values(6,'pooja','thane');
+insert into customers values(4,'geeta','satara');
+insert into customers values(2,'nilesh','nagpur');
+insert into customers values(3,'rahul','mumbai');
+insert into customers values(7,'aditya','solapur');
+insert into customers values(10,'anulekha','raigad');
+select * from customers;
+
+create table orders(order_id int not null primary key,order_amount double,cust_id int);
+insert into orders values(1,30000,10);
+insert into orders values(2,35000,4);
+insert into orders values(3,35000,2);
+insert into orders values(4,35000,3);
+insert into orders values(5,35000,6);
+insert into orders values(6,35000,7);
+insert into orders values(7,35000,1);
+select * from orders;
+select customers.cust_id,customers.cust_name,orders.order_amount from Customers inner join orders on orders.cust_id=customers.cust_id;
+insert into customers values(11,'radha','pune');
+select * from customers;
+select customers.cust_id,customers.cust_name,orders.order_amount from Customers left join orders on orders.cust_id=customers.cust_id;
+insert into orders values(10,40000,12);
+select * from orders;
+select * from customers;
+select customers.cust_id,customers.cust_name,orders.order_amount from Customers right join orders on orders.cust_id=customers.cust_id;
+select customers.cust_id,customers.cust_name,orders.order_amount,orders.order_id from Customers right join orders on orders.cust_id=customers.cust_id;
+select customers.cust_id,customers.cust_name,orders.order_amount,orders.order_id from Customers cross join orders on orders.cust_id=customers.cust_id; 
+select customers.cust_id,customers.cust_name,orders.order_amount,orders.order_id from Customers cross join orders; 
+select customers.cust_id,customers.cust_name,orders.order_amount,orders.order_id from Customers left join orders on orders.cust_id=customers.cust_id union select customers.cust_id,customers.cust_name,orders.order_amount,orders.order_id from Customers right join orders on orders.cust_id=customers.cust_id;
+show tables;
+desc department;
+desc employee;
+select * from department;
+select * from employee;
+select * from department where id=105;
+select * from employee where d_id=105;
+select name,age,salary from employee where salary > any (select salary from employee where d_id=105);
+select name,age,salary from employee where salary < any (select salary from employee where d_id=105);
+select name,age,salary from employee where salary = any (select salary from employee where d_id=105);
+
+select name,age,salary from employee where salary > all (select salary from employee where d_id=105);
+select name,age,salary from employee where salary < all (select salary from employee where d_id=105);
+select name,age,salary from employee where salary = all (select salary from employee where d_id=105);
+
+
+pip -  mysql connector install 
+
+join online support and install mysql connector 
+
+/*-----------------------*/
+
+07-05-2026
+
+
+PDBC 
+    - Python Database Connectivity 
+    - mysql-connector-python pakcage / library 
+
+pip install mysql-connector-python
+
+import mysql.connector
+
+# 1. Connect to database (creates it if it doesn't exist)
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+
+# Create table
+cursor.execute('CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, name TEXT, age INTEGER)')
+
+# --- CRUD OPERATIONS ---
+
+# CREATE: Add a new record
+cursor.execute("INSERT INTO users (name, age) VALUES (?, ?)", ("Alice", 30))
+conn.commit()
+
+# READ: Retrieve data
+cursor.execute("SELECT * FROM users")
+users = cursor.fetchall()
+print(f"Current Users: {users}")
+
+# UPDATE: Modify an existing record
+cursor.execute("UPDATE users SET age = ? WHERE name = ?", (31, "Alice"))
+conn.commit()
+
+# DELETE: Remove a record
+cursor.execute("DELETE FROM users WHERE name = ?", ("Alice",))
+conn.commit()
+
+# Close connection
+conn.close()
+
+
+#-------------------#
+
+import mysql.connector
+
+db_connect=mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="root",
+    database="batch_k_1319"
+)
+
+print(db_connect)
+if(db_connect.is_connected):
+    print("Database Connection Done...")
+else:
+    print("Database Connection Not Done...")
+
+def getAllEmployeeData():
+    cursor=db_connect.cursor()
+    query="select * from employee"
+    cursor.execute(query)
+    employeeData=cursor.fetchall()
+    print(employeeData)
+    cursor.close()
+    db_connect.close()
+
+# getAllEmployeeData()
+
+def getEmployeeData_2():
+    cursor=db_connect.cursor()
+    query="select * from employee"
+    cursor.execute(query)
+    employeeData=cursor.fetchall()
+    for emp in employeeData:
+        print(emp)
+    cursor.close()
+    db_connect.close()
+
+# getEmployeeData_2()
+
+def insertData():
+    cursor=db_connect.cursor()
+    query="insert into employee values(%s,%s,%s,%s,%s)"
+    data=(32,"Sakshi Kale",25,65000,102)
+    cursor.execute(query,data)
+    db_connect.commit()
+    print("Employee Data Added...")
+    cursor.close()
+    db_connect.close()
+
+# insertData()
+
+def getEmployeeData_3():
+    cursor=db_connect.cursor()
+    query="select * from employee where id=%s"
+    data=(32,)
+    cursor.execute(query,data)
+    employeeData=cursor.fetchone()
+    print(employeeData)
+    cursor.close()
+    db_connect.close()
+
+getEmployeeData_3()
+# update and delete 
+
+def updateEmployee():
+    cursor=db_connect.cursor()
+    query="update employee set salary=%s where id=%s"
+    data=(75000,32)
+    cursor.execute(query,data)
+    db_connect.commit()
+    print("Employee Data Updated...")
+    cursor.close()
+    db_connect.close()
+
+# updateEmployee()
+
+def deleteEmployee():
+    cursor=db_connect.cursor()
+    query="delete from employee where id=%s"
+    data=(32,)
+    cursor.execute(query,data)
+    db_connect.commit()
+    print("Employee Data Deleted...")
+    cursor.close()
+    db_connect.close()
+
+# deleteEmployee()
